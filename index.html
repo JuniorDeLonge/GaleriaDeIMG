@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon.ico">
+    <title>Galeria de Imagens | @juniordelonge</title>
+</head>
+
+<body>
+    <div class="gallery-container">
+        <div class="image" onclick="openLightbox('touro1.jpeg')">
+            <div class="image-card">
+                <img src="touro1.jpeg" alt="Touro 1">
+                <div class="image-overlay"></div>
+            </div>
+        </div>
+        <div class="image" onclick="openLightbox('touro2.jpeg')">
+            <div class="image-card">
+                <img src="touro2.jpeg" alt="Touro 2">
+                <div class="image-overlay"></div>
+            </div>
+        </div>
+        <div class="image" onclick="openLightbox('touro3.jpeg')">
+            <div class="image-card">
+                <img src="touro3.jpeg" alt="Touro 3">
+                <div class="image-overlay"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-button" onclick="closeLightbox()"><i class="fas fa-times"></i></span>
+        <img id="lightbox-image" src="" alt="Lightbox Image">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
